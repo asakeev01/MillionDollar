@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+from apps.kitchen.models import *
+
+
+class Order(models.Model):
+    time = models.TimeField(auto_now_add= True)
+    meals = models.ManyToManyField(Meal)
