@@ -18,8 +18,6 @@ class Meal(models.Model):
     def __str__(self):
         return self.name
 
-    # def self_price(self):
-    #     return self.quantity.weight.quantity % 1000 % self.quantity.product.price
 
 class Weight(models.Model):
     weight = models.PositiveIntegerField()
